@@ -39,6 +39,9 @@
       function countLetter () {
         let chars = myString.split("");
         num = chars.length;
+        num /= 2;
+        console.log(num);
+        num = Math.round(num); //delete by two, round up if needed
         console.log(num);
       }
       
