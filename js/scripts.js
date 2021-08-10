@@ -15,15 +15,24 @@
       let mixCap = first.concat(last); 
 
        // Create another function that will reverse the order of these two letters and return the result.
+       let revCap;
       function swapCaps(first, last) {
         let t = first;
         first = last;
         last = t;
-        let revCap = first.concat(last);
+        revCap = first.concat(last);
         console.log(revCap);
       }
 
       swapCaps(first, last);      
+
+      function addCapToSent(myString, revCap) {
+        let capToSent = myString.concat(revCap);
+        console.log(capToSent);        
+      }
+      addCapToSent(myString, revCap);
+
+
     }
 
     charCap();
