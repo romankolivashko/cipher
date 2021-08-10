@@ -1,20 +1,24 @@
 
-// create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new string.
+// create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new myString.
 
-function takeAndModSent() {
-    word = prompt("Enter a sentence:");
-    firstL = word.charAt(0).toUpperCase();
-    lastL = word.slice(-1).toUpperCase();
 
-    word = word.split(" ");
+    
 
-    console.log(word[0]);
-    console.log(typeof(word));
-    console.log(firstL);
-    console.log(lastL);
-}
+    function charCap() {
+      let myString = prompt("Enter a sentence:");
+      console.log(myString);
+      let first = myString.charAt(0).toUpperCase();
+      console.log(first);
+      let last = myString.charAt(myString.length - 1).toUpperCase();   
+      console.log(last); 
+      let myStringCap = first + last;
+      let mixCap = first.concat(last); 
+      console.log(myStringCap);
+    }
 
-takeAndModSent();
+    charCap();
+
+
 
 // $(document).ready(function() {
 //   $("h1").click(function() {
