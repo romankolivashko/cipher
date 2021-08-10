@@ -28,9 +28,9 @@
 
 
       // Add code to your third function to concatenate the new two-letter string together with the original phrase. It should add the two-letter string at the end, forming the final result "I am a sentenceEI."
-
+      let capToSent;
       function addCapToSent(myString, revCap) {
-        let capToSent = myString.concat(revCap);
+        capToSent = myString.concat(revCap);
         console.log(capToSent);        
       }
       addCapToSent(myString, revCap);
@@ -43,7 +43,10 @@
         console.log(num);
         num = Math.round(num); //delete by two, round up if needed
         console.log(num);
-        console.log(chars[num]); //output the letter at this index
+        indChar = chars[num];
+        concatSent = indChar.concat(capToSent); //Concat this letter at original string
+        console.log(concatSent);
+        console.log(indChar); //output the letter at this index
       }
       
       countLetter();
