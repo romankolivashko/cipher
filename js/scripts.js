@@ -3,7 +3,7 @@
 
 
   
-
+    let myString;
     function charCap() {
       let myString = prompt("Enter a sentence:");
       console.log(myString);
@@ -11,11 +11,11 @@
       console.log(first);
       let last = myString.charAt(myString.length - 1).toUpperCase();   
       console.log(last); 
-      let myStringCap = first + last;
+      myStringCap = first + last;
       let mixCap = first.concat(last); 
 
        // Create another function that will reverse the order of these two letters and return the result.
-       let revCap;
+      let revCap;
       function swapCaps(first, last) {
         let t = first;
         first = last;
@@ -26,11 +26,24 @@
 
       swapCaps(first, last);      
 
+
+      // Add code to your third function to concatenate the new two-letter string together with the original phrase. It should add the two-letter string at the end, forming the final result "I am a sentenceEI."
+
       function addCapToSent(myString, revCap) {
         let capToSent = myString.concat(revCap);
         console.log(capToSent);        
       }
       addCapToSent(myString, revCap);
+
+      // Create a fourth function to count the number of letters in the original sentence
+      function countLetter () {
+        let chars = myString.split("");
+        num = chars.length;
+        console.log(num);
+      }
+      
+      countLetter();
+
 
 
     }
