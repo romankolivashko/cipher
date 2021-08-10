@@ -2,7 +2,7 @@
 // create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new myString.
 
 
-    
+  
 
     function charCap() {
       let myString = prompt("Enter a sentence:");
@@ -13,10 +13,22 @@
       console.log(last); 
       let myStringCap = first + last;
       let mixCap = first.concat(last); 
-      console.log(myStringCap);
+
+      function swapCaps(first, last) {
+        let t = first;
+        first = last;
+        last = t;
+        let revCap = first.concat(last);
+        console.log(revCap);
+      }
+
+      swapCaps(first, last);
+      
     }
 
     charCap();
+
+    // Create another function that will reverse the order of these two letters and return the result.
 
 
 
