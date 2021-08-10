@@ -14,6 +14,7 @@
       let myStringCap = first + last;
       let mixCap = first.concat(last); 
 
+       // Create another function that will reverse the order of these two letters and return the result.
       function swapCaps(first, last) {
         let t = first;
         first = last;
@@ -22,13 +23,10 @@
         console.log(revCap);
       }
 
-      swapCaps(first, last);
-      
+      swapCaps(first, last);      
     }
 
     charCap();
-
-    // Create another function that will reverse the order of these two letters and return the result.
 
 
 
