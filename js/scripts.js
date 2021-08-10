@@ -36,7 +36,7 @@
       addCapToSent(myString, revCap);
 
       // Create a fourth function to count the number of letters in the original sentence
-      function countLetter () {
+      function transformString () {
         let chars = myString.split("");
         num = chars.length;
         num /= 2;
@@ -49,9 +49,18 @@
         console.log(indChar); //output the letter at this index
       }
       
-      countLetter();
+      transformString();
 
-
+      // Take the final result and reverse it
+      let str;
+      function reverseAll (){
+          str = concatSent.split("");
+          str = str.reverse();
+          str = str.join("");
+          console.log(str);
+      }
+       
+      reverseAll();
 
     }
 
