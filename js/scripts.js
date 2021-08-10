@@ -43,6 +43,7 @@
         console.log(num);
         num = Math.round(num); //delete by two, round up if needed
         console.log(num);
+        console.log(chars[num]); //output the letter at this index
       }
       
       countLetter();
